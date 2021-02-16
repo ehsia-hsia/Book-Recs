@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+}
+ul{
+    list-style: none;
+}
+
+.gridlayout{
+    display: grid;
+    grid-template-rows: 1fr 100% 1fr;
+    height: 100vw;
+    width: 100vh;
+}
+
+#navbar{
+    grid-row: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    height: 50px;
+    width: 100%;
+    border: solid;
+}
+
+#welcome-section{
+    grid-row: 2;
+    margin-top:55px;
+    margin-bottom: 3%;
+    padding: 0;
+    width: 100vw;
+    position: relative;
+    z-index: -1;
+    background-color: aquamarine;
+    text-align: center;
+}
+
+#projects{
+    grid-row: 3;
+    width: 100vw;
+    height: 50%;
+    position: relative;
+    text-align: center;
+}
+#linklist{
+    text-align: center;
+    padding: 0;
+    width: 100%;
+
+}
+#linklist li{
+    display: inline;
+    padding: 2%;
+}
+
+@media(max-width: 700px){
+   #welcome-section{
+       height: 100vh;
+   }
+   #projects{
+       position: relative;
+   }
+    #linklist li{
+        display: block;
+    }
+}
