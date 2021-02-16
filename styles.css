@@ -54,11 +54,31 @@ ul{
 }
 
 @media(max-width: 700px){
+    #gridlayout{
+        display: block;
+        height: 100vw;
+        width: 100vh;
+    }
    #welcome-section{
-       height: 100vh;
+       margin-bottom: 100px;
+       height: 100%;
    }
    #projects{
-       position: relative;
+       margin-top: 100px;
+       height: 100%;
+   }
+    #linklist li{
+        display: block;
+    }
+}
+
+@media(max-width: 600px){
+  
+   #welcome-section{
+       height: 100%;
+   }
+   #projects{
+       height: 10px;
    }
     #linklist li{
         display: block;
