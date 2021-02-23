@@ -7,8 +7,7 @@ ul{
 
 .gridlayout{
     display: grid;
-    grid-template-rows: 1fr 100% 1fr;
-    height: 100vw;
+    grid-template-rows: 50px 1fr 1fr;
     width: 100vh;
 }
 
@@ -21,12 +20,25 @@ ul{
     height: 50px;
     width: 100%;
     border: solid;
+    display: block;
+    background-color: white;
+
 }
+
+#navbar li{
+    display: inline;
+
+}
+#navbar li a{
+    text-decoration: none;
+
+}
+
+
 
 #welcome-section{
     grid-row: 2;
-    margin-top:55px;
-    margin-bottom: 3%;
+    /* margin-top:55px; */
     padding: 0;
     height: 100vh;
     width: 100vw;
@@ -39,10 +51,11 @@ ul{
 #projects{
     grid-row: 3;
     width: 100vw;
-    height: 50%;
+    height: 500px;
     position: relative;
     text-align: center;
 }
+
 #linklist{
     text-align: center;
     padding: 0;
@@ -52,8 +65,8 @@ ul{
 #linklist li{
     display: inline;
     padding: 2%;
+    
 }
-
 @media(max-width: 700px){
     #gridlayout{
         display: block;
