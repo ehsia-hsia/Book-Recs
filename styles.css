@@ -99,7 +99,7 @@ ul{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-template-rows: repeat(auto-fit, minmax(350px, 1fr));
-    grid-gap: 1rem;
+    grid-gap: 3rem;
     padding: 1%;
     margin-top: 5%;
     align-items: center;
@@ -121,20 +121,27 @@ ul{
     padding: 1%;
   }
   
-/* .flip1{
+.flip1{
     grid-row: 1;
     grid-column: 1;
-
 }
 
 .flip2{
-    grid-row: 2;
+    grid-row: 1;
     grid-column: 2;
 }
 .flip3{
-    grid-row: 3;
+    grid-row: 1;
+    grid-column: 3;
+}
+.flip4{
+    grid-row: 2;
     grid-column: 1;
-} */
+}
+.flip5{
+    grid-row: 2;
+    grid-column: 2;
+}
   #nalo{
     background-image: url(https://images-na.ssl-images-amazon.com/images/I/61h6zjbZxKL.jpg);
 
@@ -143,8 +150,7 @@ ul{
 #binti{
 
     background-image:url(https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1537451432l/37877850.jpg);
-   
-    background-size:contain;
+    background-size: contain;
     background-position: center;
 
 }
@@ -164,6 +170,18 @@ ul{
     background-image: url(https://sevenstories-prod.s3.amazonaws.com/images/000001/899/9781609807191-da7f3fbf233ca2baf010a8008f711b75.jpg);
 }
 
+#blood{
+    background-image: url(https://images-na.ssl-images-amazon.com/images/I/A1agLFsWkOL.jpg);
+    background-size:contain ;
+    background-position: center top;
+
+}
+#fifth{
+    background-image: url(https://nkjemisin.com/wp-content/uploads/2013/09/Jemisin_FifthSeason-TP.jpg);
+    background-size: cover;
+    background-position: center top;
+
+}
 @media(max-width: 600px){
   
    #welcome-section{
