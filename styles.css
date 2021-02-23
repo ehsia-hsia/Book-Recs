@@ -9,7 +9,7 @@ ul{
 
 .gridlayout{
     display: grid;
-    grid-template-rows: 50px 1fr 1fr 1fr;
+    grid-template-rows: 50px 1fr 1fr 1fr 1fr;
     width: 100vh;
 }
 
@@ -41,7 +41,7 @@ ul{
 
 #navbar li a:hover{
     text-decoration: underline;
-    color: black;
+    color: grey;
 
 }
 
@@ -98,10 +98,11 @@ ul{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(350px, 1fr));
+    /* grid-template-rows: repeat(auto-fit, minmax(350px, 1fr)); */
     grid-gap: 3rem;
-    padding: 1%;
+    margin: auto;
     margin-top: 5%;
+    margin-bottom: 5%;
     align-items: center;
     justify-content: center;
   }
@@ -121,27 +122,20 @@ ul{
     padding: 1%;
   }
   
-.flip1{
-    grid-row: 1;
-    grid-column: 1;
-}
+  .first{
+      color: white;
+      box-sizing: border-box;
+  }
+  .firstText{
+      position: absolute;
+      max-width: 150px;
+      left: 100px;
+      word-wrap: break-word;
+      margin-top: 3%;
+      text-align: center;
 
-.flip2{
-    grid-row: 1;
-    grid-column: 2;
-}
-.flip3{
-    grid-row: 1;
-    grid-column: 3;
-}
-.flip4{
-    grid-row: 2;
-    grid-column: 1;
-}
-.flip5{
-    grid-row: 2;
-    grid-column: 2;
-}
+  }
+
   #nalo{
     background-image: url(https://images-na.ssl-images-amazon.com/images/I/61h6zjbZxKL.jpg);
 
@@ -182,6 +176,22 @@ ul{
     background-position: center top;
 
 }
+
+
+#fiction{
+    grid-row: 4;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    background-color:#d6c7bf
+    ;
+    height: 100%;
+    width: 100vw;
+    z-index: 1;
+    padding: 3%;
+
+}
+
 @media(max-width: 600px){
   
    #welcome-section{
@@ -201,15 +211,7 @@ ul{
         height: 100vw;
         width: 100vh;
     }
-    .books{
-        display: block;
-        margin: auto;
-        grid-template-columns: none;
-        grid-template-rows: none;
-
-        align-items: baseline;
-       
-    }
+   
    #welcome-section{
        margin-bottom: 100px;
        height: 100%;
