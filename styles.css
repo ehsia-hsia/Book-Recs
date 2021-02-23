@@ -35,7 +35,7 @@ ul{
 }
 #navbar li a{
     text-decoration: none;
-    color: black;
+    color: white;
 
 }
 
@@ -121,7 +121,7 @@ ul{
     padding: 1%;
   }
   
-.flip1{
+/* .flip1{
     grid-row: 1;
     grid-column: 1;
 
@@ -134,7 +134,7 @@ ul{
 .flip3{
     grid-row: 3;
     grid-column: 1;
-}
+} */
   #nalo{
     background-image: url(https://images-na.ssl-images-amazon.com/images/I/61h6zjbZxKL.jpg);
 
@@ -151,13 +151,14 @@ ul{
 
 #captionBinti{
     position: absolute;
-    bottom: 150px;
-    right: 20px;
-    background-color: black;
+    /* height: 300px; */
+    bottom: 50px;
+    right: 150px;
     color: white;
     padding-left: 20px;
     padding-right: 20px;
 }
+
 
 #butler{
     background-image: url(https://sevenstories-prod.s3.amazonaws.com/images/000001/899/9781609807191-da7f3fbf233ca2baf010a8008f711b75.jpg);

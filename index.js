@@ -29,7 +29,9 @@ function myFunction3() {
         bookButton1.style.backgroundSize = "cover";
         bookButton1.style.backgroundPosition = "center top";
         let text = document.querySelector('#captionBinti');
+        let styles = document.querySelector('#styles');
         text.innerHTML = "Such a blast to read";
+
     }
 }
 
@@ -44,13 +46,13 @@ function myFunction4() {
         bookButton1.style.backgroundImage = "url(https://sevenstories-prod.s3.amazonaws.com/images/000001/899/9781609807191-da7f3fbf233ca2baf010a8008f711b75.jpg)";
         bookButton1.style.backgroundSize = "contain";
         bookButton1.style.backgroundPosition = "center top";
-        let text = document.querySelector('#');
+        // let text = document.querySelector('#');
         text.innerHTML = "";
     } else {
         bookButton1.style.backgroundImage = "url(https://miro.medium.com/max/1600/1*CYXgMimMw7JfKg1qlQl6UA.png)";
         bookButton1.style.backgroundSize = "cover";
         bookButton1.style.backgroundPosition = "center top";
-        let text = document.querySelector('#');
-        text.innerHTML = "Such a blast to read";
+        // let text = document.querySelector('#');
+        // text.innerHTML = "Such a blast to read";
     }
 }
