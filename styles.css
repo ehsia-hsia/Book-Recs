@@ -1,5 +1,7 @@
 body{
     margin: 0;
+    background-color: black ;
+
 }
 ul{
     list-style: none;
@@ -7,7 +9,7 @@ ul{
 
 .gridlayout{
     display: grid;
-    grid-template-rows: 50px 1fr 1fr;
+    grid-template-rows: 50px 1fr 1fr 1fr;
     width: 100vh;
 }
 
@@ -21,7 +23,7 @@ ul{
     width: 100%;
     border: solid;
     display: block;
-    background-color: white;
+    background-color: black;    
     z-index: 99;
 
 }
@@ -45,17 +47,16 @@ ul{
 
 #welcome-section{
     grid-row: 2;
-    /* margin-top:55px; */
     padding: 0;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     position: relative;
     z-index: -1;
-    background-color: aquamarine;
     text-align: center;
     background-image: url(https://i0.wp.com/www.tor.com/wp-content/uploads/2018/05/MidnightRobber-crop.jpg?fit=740%2C+9999&crop=0%2C0%2C100%2C385px&ssl=1);
     background-attachment: fixed;
     background-repeat: no-repeat;
+    background-position: top;
     background-size: cover;
      
 }
@@ -63,16 +64,16 @@ ul{
     position: absolute;
     width: 100%;
     height: 50px;
-    top: 20%;
+    top: 10%;
     font-size: 10rem;
     color: transparent;
     -webkit-text-stroke-width: 3px;
-    -webkit-text-stroke-color: black;
-    text-shadow:  0 0 1em white, 0 0 0.2em white;
+    -webkit-text-stroke-color: white;
+    text-shadow:  0 0 1em white, 1 0 0.2em white;
 }
 
 #projects{
-    grid-row: 3;
+    grid-row: 4;
     width: 100vw;
     height: 500px;
     position: relative;
@@ -93,11 +94,16 @@ ul{
 
 
 .books {
+    grid-row: 3;
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(350px, 1fr));
     grid-gap: 1rem;
-    width: 50%;
+    padding: 1%;
+    margin-top: 5%;
+    align-items: center;
+    justify-content: center;
   }
   
 
@@ -108,34 +114,38 @@ ul{
     z-index: -1;
     background-size: cover;
     border: solid;
+    border-color: white;
     border-radius: 50%;
-    margin: 0;
-    max-width: 100%;
+    margin: auto;
+    /* max-width: 100%; */
     padding: 1%;
   }
   
-  .outline{
-    width: 350px;
-    height: 350px;
-    position: relative;
-    border-radius: 50%;
-    margin: 0;
-    max-width: 100%;
-    border: solid;
-    border-radius: 50%;
-    border-width: 1px;
-  }
-  
+.flip1{
+    grid-row: 1;
+    grid-column: 1;
 
+}
+
+.flip2{
+    grid-row: 2;
+    grid-column: 2;
+}
+.flip3{
+    grid-row: 3;
+    grid-column: 1;
+}
   #nalo{
     background-image: url(https://images-na.ssl-images-amazon.com/images/I/61h6zjbZxKL.jpg);
 
 }
 
 #binti{
-    background-image: url(https://images-na.ssl-images-amazon.com/images/I/81IICHFn4LL.jpg);
-    background-size: cover;
-    background-position:center top;
+
+    background-image:url(https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1537451432l/37877850.jpg);
+   
+    background-size:contain;
+    background-position: center;
 
 }
 
@@ -147,17 +157,10 @@ ul{
     color: white;
     padding-left: 20px;
     padding-right: 20px;
-    
-
 }
 
-
-
-.image2{
-  height: 200px;
-  width: 200px;
-  border: solid;
-  background-color: white;
+#butler{
+    background-image: url(https://sevenstories-prod.s3.amazonaws.com/images/000001/899/9781609807191-da7f3fbf233ca2baf010a8008f711b75.jpg);
 }
 
 @media(max-width: 600px){
@@ -178,6 +181,15 @@ ul{
         display: block;
         height: 100vw;
         width: 100vh;
+    }
+    .books{
+        display: block;
+        margin: auto;
+        grid-template-columns: none;
+        grid-template-rows: none;
+
+        align-items: baseline;
+       
     }
    #welcome-section{
        margin-bottom: 100px;
