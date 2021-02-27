@@ -1,226 +1,210 @@
-body{
-    margin: 0;
-    background-color: black ;
-
+body {
+  margin: 0;
+  background-color: black;
 }
-ul{
-    list-style: none;
-}
-
-.gridlayout{
-    display: grid;
-    grid-template-rows: 50px 1fr 1fr 1fr 1fr;
-    width: 100vh;
+ul {
+  list-style: none;
 }
 
-#navbar{
-    grid-row: 1;
-    position: fixed;
-    top: 0;
-    left: 0;
-    margin: 0;
-    height: 50px;
-    width: 100%;
-    border: solid;
-    display: block;
-    background-color: black;    
-    z-index: 99;
-
+.gridlayout {
+  display: grid;
+  grid-template-rows: 50px 1fr 1fr 1fr 1fr;
+  width: 100vh;
 }
 
-#navbar li{
-    display: inline;
-    padding: 2%;
-
-}
-#navbar li a{
-    text-decoration: none;
-    color: white;
-
-}
-
-#navbar li a:hover{
-    text-decoration: underline;
-    color: grey;
-
+#navbar {
+  grid-row: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  height: 50px;
+  width: 100%;
+  border: solid;
+  display: block;
+  background-color: black;
+  z-index: 99;
 }
 
-#welcome-section{
-    grid-row: 2;
-    padding: 0;
-    height: 100%;
-    width: 100vw;
-    position: relative;
-    z-index: -1;
-    text-align: center;
-    background-image: url(https://i0.wp.com/www.tor.com/wp-content/uploads/2018/05/MidnightRobber-crop.jpg?fit=740%2C+9999&crop=0%2C0%2C100%2C385px&ssl=1);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
-     
+#navbar li {
+  display: inline;
+  padding: 2%;
 }
-#welcome-section h1{
-    position: absolute;
-    width: 100%;
-    height: 50px;
-    top: 10%;
-    font-size: 10rem;
-    color: transparent;
-    -webkit-text-stroke-width: 3px;
-    -webkit-text-stroke-color: white;
-    text-shadow:  0 0 1em white, 1 0 0.2em white;
+#navbar li a {
+  text-decoration: none;
+  color: white;
 }
 
-#projects{
-    grid-row: 4;
-    width: 100vw;
-    height: 500px;
-    position: relative;
-    text-align: center;
+#navbar li a:hover {
+  text-decoration: underline;
+  color: grey;
 }
 
-#linklist{
-    text-align: center;
-    padding: 0;
-    width: 100%;
-
+#welcome-section {
+  grid-row: 2;
+  padding: 0;
+  height: 100%;
+  width: 100vw;
+  position: relative;
+  z-index: -1;
+  text-align: center;
+  background-image: url(https://i0.wp.com/www.tor.com/wp-content/uploads/2018/05/MidnightRobber-crop.jpg?fit=740%2C+9999&crop=0%2C0%2C100%2C385px&ssl=1);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
 }
-#linklist li{
-    display: inline;
-    padding: 2%;
-    
+#welcome-section h1 {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  top: 10%;
+  font-size: 10rem;
+  color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: white;
+  text-shadow: 0 0 1em white, 1 0 0.2em white;
 }
 
+#projects {
+  grid-row: 4;
+  width: 100vw;
+  height: 500px;
+  position: relative;
+  text-align: center;
+}
+
+#linklist {
+  text-align: center;
+  padding: 0;
+  width: 100%;
+}
+#linklist li {
+  display: inline;
+  padding: 2%;
+}
 
 .books {
-    grid-row: 3;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    /* grid-template-rows: repeat(auto-fit, minmax(350px, 1fr)); */
-    grid-gap: 3rem;
-    margin: auto;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    align-items: center;
-    justify-content: center;
+  grid-row: 3;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 3rem;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  width: 350px;
+  height: 350px;
+  position: relative;
+  z-index: -1;
+  background-size: cover;
+  border: solid;
+  border-color: white;
+  border-radius: 50%;
+  margin: auto;
+  /* max-width: 100%; */
+  padding: 1%;
+}
+
+.first {
+  color: white;
+  box-sizing: border-box;
+}
+.firstText {
+  position: absolute;
+  max-width: 150px;
+  left: 100px;
+  word-wrap: break-word;
+  margin-top: 3%;
+  text-align: center;
+}
+#myDIV {
+  max-width: 50px;
+  position: absolute;
+  left: 10px;
+}
+
+#nalo {
+  background-image: url(https://images-na.ssl-images-amazon.com/images/I/61h6zjbZxKL.jpg);
+}
+
+#binti {
+  background-image: url(https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1537451432l/37877850.jpg);
+  background-size: contain;
+  background-position: center;
+}
+
+#captionBinti {
+  position: absolute;
+  /* height: 300px; */
+  bottom: 50px;
+  right: 150px;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#butler {
+  background-image: url(https://sevenstories-prod.s3.amazonaws.com/images/000001/899/9781609807191-da7f3fbf233ca2baf010a8008f711b75.jpg);
+}
+
+#blood {
+  background-image: url(https://images-na.ssl-images-amazon.com/images/I/A1agLFsWkOL.jpg);
+  background-size: contain;
+  background-position: center top;
+}
+#fifth {
+  background-image: url(https://nkjemisin.com/wp-content/uploads/2013/09/Jemisin_FifthSeason-TP.jpg);
+  background-size: cover;
+  background-position: center top;
+}
+
+#fiction {
+  grid-row: 4;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  background-color: #d6c7bf;
+  height: 100%;
+  width: 100vw;
+  z-index: 1;
+  padding: 3%;
+}
+
+@media (max-width: 600px) {
+  #welcome-section {
+    height: 675px;
   }
-  
-
-  .image{
-    width: 350px;
-    height: 350px;
-    position: relative;
-    z-index: -1;
-    background-size: cover;
-    border: solid;
-    border-color: white;
-    border-radius: 50%;
-    margin: auto;
-    /* max-width: 100%; */
-    padding: 1%;
+  #projects {
+    height: 10px;
   }
-  
-  .first{
-      color: white;
-      box-sizing: border-box;
+  #linklist li {
+    display: block;
   }
-  .firstText{
-      position: absolute;
-      max-width: 150px;
-      left: 100px;
-      word-wrap: break-word;
-      margin-top: 3%;
-      text-align: center;
+}
 
+@media (max-width: 700px) {
+  #gridlayout {
+    display: block;
+    height: 100vw;
+    width: 100vh;
   }
 
-  #nalo{
-    background-image: url(https://images-na.ssl-images-amazon.com/images/I/61h6zjbZxKL.jpg);
-
-}
-
-#binti{
-
-    background-image:url(https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1537451432l/37877850.jpg);
-    background-size: contain;
-    background-position: center;
-
-}
-
-#captionBinti{
-    position: absolute;
-    /* height: 300px; */
-    bottom: 50px;
-    right: 150px;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-
-#butler{
-    background-image: url(https://sevenstories-prod.s3.amazonaws.com/images/000001/899/9781609807191-da7f3fbf233ca2baf010a8008f711b75.jpg);
-}
-
-#blood{
-    background-image: url(https://images-na.ssl-images-amazon.com/images/I/A1agLFsWkOL.jpg);
-    background-size:contain ;
-    background-position: center top;
-
-}
-#fifth{
-    background-image: url(https://nkjemisin.com/wp-content/uploads/2013/09/Jemisin_FifthSeason-TP.jpg);
-    background-size: cover;
-    background-position: center top;
-
-}
-
-
-#fiction{
-    grid-row: 4;
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    background-color:#d6c7bf
-    ;
+  #welcome-section {
+    margin-bottom: 100px;
     height: 100%;
-    width: 100vw;
-    z-index: 1;
-    padding: 3%;
-
-}
-
-@media(max-width: 600px){
-  
-   #welcome-section{
-       height: 675px;
-   }
-   #projects{
-       height: 10px;
-   }
-    #linklist li{
-        display: block;
-    }
-}
-
-@media(max-width: 700px){
-    #gridlayout{
-        display: block;
-        height: 100vw;
-        width: 100vh;
-    }
-   
-   #welcome-section{
-       margin-bottom: 100px;
-       height: 100%;
-   }
-   #projects{
-       margin-top: 100px;
-       height: 100%;
-   }
-    #linklist li{
-        display: block;
-    }
+  }
+  #projects {
+    margin-top: 100px;
+    height: 100%;
+  }
+  #linklist li {
+    display: block;
+  }
 }
