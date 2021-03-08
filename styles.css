@@ -1,15 +1,15 @@
 body {
-  margin: 0;
   background-color: black;
-}
-ul {
-  list-style: none;
+  margin: 0;
 }
 
 .gridlayout {
   display: grid;
   grid-template-rows: 50px 1fr 1fr 1fr 1fr;
-  width: 100vh;
+  grid-template: repeat(100%);
+  width: 90vh;
+  margin: 0;
+  align-items: center;
 }
 
 #navbar {
@@ -26,18 +26,26 @@ ul {
   z-index: 99;
 }
 
+ul {
+  list-style: none;
+}
 #navbar li {
   display: inline;
-  padding: 2%;
+  padding: 5px;
+  border: solid 2px white;
+  border-radius: 5px;
 }
 #navbar li a {
   text-decoration: none;
   color: white;
 }
 
+#navbar li:hover {
+  background-color: white;
+}
+
 #navbar li a:hover {
-  text-decoration: underline;
-  color: grey;
+  color: black;
 }
 
 #welcome-section {
@@ -54,6 +62,7 @@ ul {
   background-position: top;
   background-size: cover;
 }
+
 #welcome-section h1 {
   position: absolute;
   width: 100%;
@@ -66,39 +75,23 @@ ul {
   text-shadow: 0 0 1em white, 1 0 0.2em white;
 }
 
-#projects {
-  grid-row: 4;
-  width: 100vw;
-  height: 500px;
-  position: relative;
-  text-align: center;
-}
-
-#linklist {
-  text-align: center;
-  padding: 0;
-  width: 100%;
-}
-#linklist li {
-  display: inline;
-  padding: 2%;
-}
-
 .books {
   grid-row: 3;
-  width: 100%;
+  width: 80%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
   grid-template-rows: repeat(auto-fit, minmax(400px, 1fr));
   grid-gap: 3rem;
-  /* margin: 5%; */
+  margin: auto;
   margin-top: 5%;
   margin-bottom: 5%;
-  align-content: center;
-  justify-content: center;
+  align-items: center;
+  justify-items: center;
 }
+
 .round {
-  background-size: cover;
+  background-position: center;
+  background-size: contain;
   border: solid;
   border-color: white;
   border-radius: 50%;

@@ -74,7 +74,7 @@ for (let i = 0; i < backKey.length; i++) {
       currentArr[0].classList.remove("coverB");
     } else {
       currentArr[0].style.backgroundImage = currentArr[1];
-      currentArr[0].classList.add("coverB");
+      currentArr[0].classList.add("round");
       currentArr[0].classList.remove("containB");
     }
   }
