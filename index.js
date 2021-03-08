@@ -4,11 +4,14 @@ let book2 = document.querySelector(".flip3");
 let book3 = document.querySelector(".flip4");
 let book4 = document.querySelector(".flip5");
 let caption = document.querySelector(".caption");
+let naloCaption = document.getElementById("captionNalo");
+let naloCaption = document.getElementById("captionNalo");
+
 book.addEventListener("click", changeBackground);
 book1.addEventListener("click", changeBackground);
 book2.addEventListener("click", changeBackground);
-// book3.addEventListener("click", changeBackground);
-// book4.addEventListener("click", changeBackground);
+book3.addEventListener("click", changeBackground);
+book4.addEventListener("click", changeBackground);
 
 /* backKey:
 0 = id
@@ -16,6 +19,7 @@ book2.addEventListener("click", changeBackground);
 2 = trunc first image
 3 = full second image url
 4 = trunc second image
+5 = caption
 */
 
 let backKey = [
@@ -26,6 +30,7 @@ let backKey = [
     "61h6zjbZxKL.jpg",
     "url(https://i0.wp.com/www.tor.com/wp-content/uploads/2018/05/MidnightRobber-crop.jpg?fit=740%2C+9999&crop=0%2C0%2C100%2C385px&ssl=1)",
     "MidnightRobber-crop.jpg",
+    naloCaption,
   ],
   //Binti
   [
@@ -42,6 +47,7 @@ let backKey = [
     "da7f3fbf233ca2baf010a8008f711b75.jpg",
     "url(https://miro.medium.com/max/1600/1*CYXgMimMw7JfKg1qlQl6UA.png)",
     "CYXgMimMw7JfKg1qlQl6UA.png",
+    caption,
   ],
   //Blood
   [
@@ -72,12 +78,12 @@ for (let i = 0; i < backKey.length; i++) {
       currentArr[0].style.backgroundImage = currentArr[3];
       currentArr[0].classList.add("containB");
       currentArr[0].classList.remove("coverB");
-      caption.classList.remove("hidden");
+      currentArr[5].classList.remove("hidden");
     } else {
       currentArr[0].style.backgroundImage = currentArr[1];
       currentArr[0].classList.add("coverB");
       currentArr[0].classList.remove("containB");
-      caption.classList.add("hidden");
+      currentArr[5].classList.add("hidden");
     }
   }
 }
