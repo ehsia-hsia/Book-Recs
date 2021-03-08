@@ -6,6 +6,7 @@ let book4 = document.querySelector(".flip5");
 let caption = document.querySelector(".caption");
 let naloCaption = document.getElementById("captionNalo");
 let bintiCaption = document.getElementById("captionBinti");
+let butlerCaption = document.getElementById("captionButler");
 
 book.addEventListener("click", changeBackground);
 book1.addEventListener("click", changeBackground);
@@ -48,7 +49,7 @@ let backKey = [
     "da7f3fbf233ca2baf010a8008f711b75.jpg",
     "url(https://miro.medium.com/max/1600/1*CYXgMimMw7JfKg1qlQl6UA.png)",
     "CYXgMimMw7JfKg1qlQl6UA.png",
-    caption,
+    butlerCaption,
   ],
   //Blood
   [
