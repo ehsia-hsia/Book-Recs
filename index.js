@@ -5,7 +5,7 @@ let book3 = document.querySelector(".flip4");
 let book4 = document.querySelector(".flip5");
 let caption = document.querySelector(".caption");
 let naloCaption = document.getElementById("captionNalo");
-let naloCaption = document.getElementById("captionNalo");
+let bintiCaption = document.getElementById("captionBinti");
 
 book.addEventListener("click", changeBackground);
 book1.addEventListener("click", changeBackground);
@@ -39,6 +39,7 @@ let backKey = [
     "81IICHFn4LL.jpg",
     "url(https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1537451432l/37877850.jpg)",
     "37877850.jpg",
+    bintiCaption,
   ],
   //Butler
   [
