@@ -88,26 +88,36 @@ ul {
   grid-row: 3;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(400px, 1fr));
   grid-gap: 3rem;
-  margin: auto;
+  /* margin: 5%; */
   margin-top: 5%;
   margin-bottom: 5%;
-  align-items: center;
+  align-content: center;
   justify-content: center;
 }
-
-.image {
-  width: 350px;
-  height: 350px;
-  position: relative;
-  z-index: -1;
+.round {
   background-size: cover;
   border: solid;
   border-color: white;
   border-radius: 50%;
+  width: 350px;
+  height: 350px;
   margin: auto;
+  position: relative;
+  padding: 4%;
+}
+.containB {
+  background-size: contain;
+}
+.coverB {
+  background-size: 40%;
+}
+
+.image {
+  position: relative;
+  z-index: -1;
   /* max-width: 100%; */
   padding: 1%;
 }
@@ -130,11 +140,11 @@ ul {
   left: 10px;
 }
 
-#nalo {
+/* #nalo {
   background-image: url(https://images-na.ssl-images-amazon.com/images/I/61h6zjbZxKL.jpg);
-}
+} */
 
-#binti {
+/* #binti {
   background-image: url(https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1537451432l/37877850.jpg);
   background-size: contain;
   background-position: center;
@@ -143,7 +153,7 @@ ul {
 #captionBinti {
   position: absolute;
   /* height: 300px; */
-  bottom: 50px;
+/* bottom: 50px;
   right: 150px;
   color: white;
   padding-left: 20px;
@@ -163,7 +173,7 @@ ul {
   background-image: url(https://nkjemisin.com/wp-content/uploads/2013/09/Jemisin_FifthSeason-TP.jpg);
   background-size: cover;
   background-position: center top;
-}
+} */
 
 #fiction {
   grid-row: 4;
@@ -194,6 +204,7 @@ ul {
     display: block;
     height: 100vw;
     width: 100vh;
+    align-items: center;
   }
 
   #welcome-section {
