@@ -3,7 +3,7 @@ let book1 = document.querySelector(".flip2");
 let book2 = document.querySelector(".flip3");
 let book3 = document.querySelector(".flip4");
 let book4 = document.querySelector(".flip5");
-
+let caption = document.querySelector(".caption");
 book.addEventListener("click", changeBackground);
 book1.addEventListener("click", changeBackground);
 book2.addEventListener("click", changeBackground);
@@ -72,10 +72,12 @@ for (let i = 0; i < backKey.length; i++) {
       currentArr[0].style.backgroundImage = currentArr[3];
       currentArr[0].classList.add("containB");
       currentArr[0].classList.remove("coverB");
+      caption.classList.remove("hidden");
     } else {
       currentArr[0].style.backgroundImage = currentArr[1];
-      currentArr[0].classList.add("round");
+      currentArr[0].classList.add("coverB");
       currentArr[0].classList.remove("containB");
+      caption.classList.add("hidden");
     }
   }
 }

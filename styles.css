@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   background-color: black;
   margin: 0;
@@ -100,19 +103,20 @@ ul {
   margin: auto;
   position: relative;
   padding: 4%;
+  z-index: 1;
 }
 .containB {
   background-size: contain;
 }
 .coverB {
-  background-size: 40%;
+  background-position: center;
 }
 
 .image {
   position: relative;
   z-index: -1;
-  /* max-width: 100%; */
   padding: 1%;
+  color: wheat;
 }
 
 .first {
@@ -127,46 +131,17 @@ ul {
   margin-top: 3%;
   text-align: center;
 }
-#myDIV {
-  max-width: 50px;
-  position: absolute;
-  left: 10px;
-}
-
-/* #nalo {
-  background-image: url(https://images-na.ssl-images-amazon.com/images/I/61h6zjbZxKL.jpg);
-} */
-
-/* #binti {
-  background-image: url(https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1537451432l/37877850.jpg);
-  background-size: contain;
-  background-position: center;
-}
-
-#captionBinti {
-  position: absolute;
-  /* height: 300px; */
-/* bottom: 50px;
-  right: 150px;
+.caption {
   color: white;
-  padding-left: 20px;
-  padding-right: 20px;
+  position: absolute;
+  z-index: 99;
+  display: inline;
+  margin: 0;
+  padding: 0;
 }
-
-#butler {
-  background-image: url(https://sevenstories-prod.s3.amazonaws.com/images/000001/899/9781609807191-da7f3fbf233ca2baf010a8008f711b75.jpg);
+.hidden {
+  display: none;
 }
-
-#blood {
-  background-image: url(https://images-na.ssl-images-amazon.com/images/I/A1agLFsWkOL.jpg);
-  background-size: contain;
-  background-position: center top;
-}
-#fifth {
-  background-image: url(https://nkjemisin.com/wp-content/uploads/2013/09/Jemisin_FifthSeason-TP.jpg);
-  background-size: cover;
-  background-position: center top;
-} */
 
 #fiction {
   grid-row: 4;
@@ -176,7 +151,7 @@ ul {
   background-color: #d6c7bf;
   height: 100%;
   width: 100vw;
-  z-index: 1;
+  z-index: -2;
   padding: 3%;
 }
 
