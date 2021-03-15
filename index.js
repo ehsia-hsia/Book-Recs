@@ -1,3 +1,5 @@
+"use strict";
+
 let book = document.querySelector(".flip1");
 let book1 = document.querySelector(".flip2");
 let book2 = document.querySelector(".flip3");
@@ -7,12 +9,15 @@ let caption = document.querySelector(".caption");
 let naloCaption = document.getElementById("captionNalo");
 let bintiCaption = document.getElementById("captionBinti");
 let butlerCaption = document.getElementById("captionButler");
+let fiction1 = document.getElementById("fiction1");
+let fiction2 = document.getElementById("fiction2");
+let image = document.getElementsByClassName("fiction");
 
-book.addEventListener("click", changeBackground);
-book1.addEventListener("click", changeBackground);
-book2.addEventListener("click", changeBackground);
-book3.addEventListener("click", changeBackground);
-book4.addEventListener("click", changeBackground);
+// book.addEventListener("click", changeBackground);
+// book1.addEventListener("click", changeBackground);
+// book2.addEventListener("click", changeBackground);
+// book3.addEventListener("click", changeBackground);
+// book4.addEventListener("click", changeBackground);
 
 /* backKey:
 0 = id
@@ -86,6 +91,39 @@ for (let i = 0; i < backKey.length; i++) {
       currentArr[0].classList.add("coverB");
       currentArr[0].classList.remove("containB");
       currentArr[5].classList.add("hidden");
+    }
+  }
+}
+
+let fictionKey = [
+  {
+    id: fiction1,
+    background1:
+      "url(https://upload.wikimedia.org/wikipedia/en/2/20/The_Grass_Dancer.jpg)",
+    backgroundTrun: "url(The_Grass_Dancer.jpg)",
+  },
+  {
+    id: fiction2,
+    background1:
+      "url(https://images-na.ssl-images-amazon.com/images/I/919XM42JQlL.jpg)",
+  },
+];
+
+for (let j = 0; j < image.length; j++) {
+  image[j].style.backgroundImage = fictionKey[j].background1;
+
+  image[j].addEventListener("click", backChanger);
+  function backChanger() {
+    for (let i = 0; i < fictionKey.length; i++) {
+      if (image[j] == fictionKey[i].id) {
+        if (
+          fictionKey[i].id.style.backgroundImage.match(
+            fictionKey[j].backgroundTrun
+          )
+        ) {
+          fictionKey[i].id.style.backgroundImage = "none";
+        }
+      }
     }
   }
 }
